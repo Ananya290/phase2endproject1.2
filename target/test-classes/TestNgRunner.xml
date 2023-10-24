@@ -1,0 +1,24 @@
+<suite name="testsuite2" verbose="1" parallel="tests">
+
+<test name="StartHealthPage">
+<parameter name="UserName"  value="admin"/>
+<parameter name="mobile"  value="535354646"/>
+<parameter name="pincode"  value="562110"/>
+<classes>
+<class name="project.StartHealthPage">
+</class>
+</classes>
+</test>
+
+
+
+<test name="starhealth002">
+
+<classes>
+<class name="project.Starhealth002">
+</class>
+</classes>
+</test>
+
+
+</suite>

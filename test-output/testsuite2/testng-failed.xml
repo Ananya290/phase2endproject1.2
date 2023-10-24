@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [testsuite2]">
+  <test thread-count="5" parallel="tests" name="starhealth002(failed)">
+    <classes>
+      <class name="project.Starhealth002">
+        <methods>
+          <include name="print_link"/>
+        </methods>
+      </class> <!-- project.Starhealth002 -->
+    </classes>
+  </test> <!-- starhealth002(failed) -->
+  <test thread-count="5" parallel="tests" name="StartHealthPage(failed)">
+    <parameter name="pincode" value="562110"/>
+    <parameter name="name" value="admin"/>
+    <parameter name="mobile" value="535354646"/>
+    <classes>
+      <class name="project.StartHealthPage">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="Test_Header_plan"/>
+          <include name="teardown"/>
+          <include name="validatedatafromExcel"/>
+        </methods>
+      </class> <!-- project.StartHealthPage -->
+    </classes>
+  </test> <!-- StartHealthPage(failed) -->
+</suite> <!-- Failed suite [testsuite2] -->
